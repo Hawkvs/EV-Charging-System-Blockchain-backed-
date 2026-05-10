@@ -5,7 +5,7 @@ import { adminRegisterUser, getAdminLogs, getAdminTransactions } from "../lib/ap
 import { connectWallet, getContractClients } from "../lib/web3";
 import { loadSession } from "../lib/session";
 
-const ADMIN_WALLET = "0x389f141512610d5Db0A55cA8924405Dc842AE0F1".toLowerCase();
+const ADMIN_WALLET = "0x490B2BD4214a215eEf0C4A92aFDeA4535FDD2775".toLowerCase();
 
 export default function AdminPage() {
   const router = useRouter();

@@ -3,9 +3,9 @@ pragma solidity ^0.8.20;
 
 contract Userregistry{
     address public admin;
-    constructor()
+    constructor(address _admin)
     {
-     admin=msg.sender;
+     admin=_admin;
     }
     enum Role{
         NONE,

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { loadSession } from "./session";
 
-const ADMIN_WALLET = "0x389f141512610d5Db0A55cA8924405Dc842AE0F1".toLowerCase();
+const ADMIN_WALLET = "0x490B2BD4214a215eEf0C4A92aFDeA4535FDD2775".toLowerCase();
 
 export function Shell({ title, subtitle, children }) {
   const [isLoggedIn, setIsLoggedIn] = useState(false);

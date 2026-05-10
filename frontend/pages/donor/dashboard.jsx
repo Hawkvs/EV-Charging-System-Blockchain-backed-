@@ -4,11 +4,13 @@ import { useRouter } from "next/router";
 import { Shell } from "../../lib/layout";
 import { loadSession } from "../../lib/session";
 import { getHistory } from "../../lib/api";
+import { getNativeBalance } from "../../lib/web3";
 
 export default function DonorDashboardPage() {
   const router = useRouter();
   const [session, setSession] = useState(null);
   const [history, setHistory] = useState([]);
+  const [balance, setBalance] = useState("-");
 
   useEffect(() => {
     const current = loadSession();
@@ -21,6 +23,10 @@ export default function DonorDashboardPage() {
     getHistory(current.address)
       .then((data) => setHistory(data.history || []))
       .catch(() => setHistory([]));
+
+    getNativeBalance(current.address)
+      .then((bal) => setBalance(bal))
+      .catch(() => setBalance("-"));
   }, [router]);
 
   const earnings = history.filter((item) => item.status >= 3).reduce((sum, item) => {
@@ -48,9 +54,11 @@ export default function DonorDashboardPage() {
       <section className="card" style={{ marginTop: 14 }}>
         <h3>Current profile</h3>
         <div className="kv" style={{ marginTop: 8 }}>
+          <div className="item"><span>Current amount (ETH)</span><span className="mono">{balance}</span></div>
           <div className="item"><span>Name</span><span>{session?.name || "-"}</span></div>
-          <div className="item"><span>Battery capacity</span><span>{session?.batteryCapacity || "-"} kWh</span></div>
+          <div className="item"><span>Battery capacity</span><span>{session?.batteryCapacity || "-"} Wh</span></div>
           <div className="item"><span>Address</span><span className="mono">{session?.address || "-"}</span></div>
+          
         </div>
       </section>
     </Shell>

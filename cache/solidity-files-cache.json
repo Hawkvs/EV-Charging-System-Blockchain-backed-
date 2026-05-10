@@ -1,8 +1,196 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "C:\\Users\\vikas\\Desktop\\frontededpwithblockchain - Copy\\contracts\\EVChargingEscrow.sol": {
-      "lastModificationDate": 1775809306239,
+    "C:\\Users\\jatin\\OneDrive\\Desktop\\frontededpwithblockchain - Copy (2)\\frontededpwithblockchain - Copy\\contracts\\ChargingRequest.sol": {
+      "lastModificationDate": 1777967552805,
+      "contentHash": "fb188fc2a4b9ab1e8f2455a6f77359a3",
+      "sourceName": "contracts/ChargingRequest.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IUserregistry",
+        "charging_request"
+      ]
+    },
+    "C:\\Users\\jatin\\OneDrive\\Desktop\\frontededpwithblockchain - Copy (2)\\frontededpwithblockchain - Copy\\contracts\\DummyEnergyValidation.sol": {
+      "lastModificationDate": 1777967552846,
+      "contentHash": "d1b52c29a3ad5e78dad63d7f741f9eac",
+      "sourceName": "contracts/DummyEnergyValidation.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "DummyEnergyValidation",
+        "IDummyEscrow"
+      ]
+    },
+    "C:\\Users\\jatin\\OneDrive\\Desktop\\frontededpwithblockchain - Copy (2)\\frontededpwithblockchain - Copy\\contracts\\DummyEscrowPayment.sol": {
+      "lastModificationDate": 1777967552879,
+      "contentHash": "b2c8108177efff89e90733dc9ace2450",
+      "sourceName": "contracts/DummyEscrowPayment.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "DummyEscrowPayment"
+      ]
+    },
+    "C:\\Users\\jatin\\OneDrive\\Desktop\\frontededpwithblockchain - Copy (2)\\frontededpwithblockchain - Copy\\contracts\\EnergyValidation.sol": {
+      "lastModificationDate": 1777967552914,
+      "contentHash": "827b1fccb1f87b2da39873591c302eb6",
+      "sourceName": "contracts/EnergyValidation.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "EnergyValidation",
+        "IChargingRequest",
+        "IEscrowPayment"
+      ]
+    },
+    "C:\\Users\\jatin\\OneDrive\\Desktop\\frontededpwithblockchain - Copy (2)\\frontededpwithblockchain - Copy\\contracts\\EscrowPayment.sol": {
+      "lastModificationDate": 1777967552949,
+      "contentHash": "f2684808c64ea88c3e4462cae4acef5e",
+      "sourceName": "contracts/EscrowPayment.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "EscrowPayment",
+        "IChargingRequest",
+        "IMatchingContract",
+        "IPlatformFee",
+        "IValidatorSource"
+      ]
+    },
+    "C:\\Users\\jatin\\OneDrive\\Desktop\\frontededpwithblockchain - Copy (2)\\frontededpwithblockchain - Copy\\contracts\\EVChargingEscrow.sol": {
+      "lastModificationDate": 1777967552982,
       "contentHash": "4b0d8d9fcf7e1898195213413632d590",
       "sourceName": "contracts/EVChargingEscrow.sol",
       "solcConfig": {
@@ -38,10 +226,10 @@
         "IUserregistry"
       ]
     },
-    "C:\\Users\\vikas\\Desktop\\frontededpwithblockchain - Copy\\contracts\\VehicleRegistry.sol": {
-      "lastModificationDate": 1775809306252,
-      "contentHash": "5081932618cd9bf4a3c86f371b7153f1",
-      "sourceName": "contracts/VehicleRegistry.sol",
+    "C:\\Users\\jatin\\OneDrive\\Desktop\\frontededpwithblockchain - Copy (2)\\frontededpwithblockchain - Copy\\contracts\\GovernanceAdmin.sol": {
+      "lastModificationDate": 1777967553018,
+      "contentHash": "30fe389a961b0f5b678018c5c35aa139",
+      "sourceName": "contracts/GovernanceAdmin.sol",
       "solcConfig": {
         "version": "0.8.28",
         "settings": {
@@ -71,13 +259,16 @@
         "^0.8.20"
       ],
       "artifacts": [
-        "Userregistry"
+        "GovernanceAdmin",
+        "IEnergyValidation",
+        "IEscrowPayment",
+        "IPlatformFee"
       ]
     },
-    "C:\\Users\\vikas\\Downloads\\frontededpwithblockchain - Copy\\contracts\\EVChargingEscrow.sol": {
-      "lastModificationDate": 1775809306239,
-      "contentHash": "4b0d8d9fcf7e1898195213413632d590",
-      "sourceName": "contracts/EVChargingEscrow.sol",
+    "C:\\Users\\jatin\\OneDrive\\Desktop\\frontededpwithblockchain - Copy (2)\\frontededpwithblockchain - Copy\\contracts\\MatchingContract.sol": {
+      "lastModificationDate": 1777967553046,
+      "contentHash": "4500eda3de12663317796a41fb1183c3",
+      "sourceName": "contracts/MatchingContract.sol",
       "solcConfig": {
         "version": "0.8.28",
         "settings": {
@@ -107,13 +298,87 @@
         "^0.8.20"
       ],
       "artifacts": [
-        "EVChargingEscrow",
-        "IUserregistry"
+        "Ichargingrequest",
+        "IuserRegistry",
+        "MatchingContract"
       ]
     },
-    "C:\\Users\\vikas\\Downloads\\frontededpwithblockchain - Copy\\contracts\\VehicleRegistry.sol": {
-      "lastModificationDate": 1775809306252,
-      "contentHash": "5081932618cd9bf4a3c86f371b7153f1",
+    "C:\\Users\\jatin\\OneDrive\\Desktop\\frontededpwithblockchain - Copy (2)\\frontededpwithblockchain - Copy\\contracts\\PlatformFee.sol": {
+      "lastModificationDate": 1777967553104,
+      "contentHash": "b60ab036ec705429d50227636e6e7857",
+      "sourceName": "contracts/PlatformFee.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "PlatformFee"
+      ]
+    },
+    "C:\\Users\\jatin\\OneDrive\\Desktop\\frontededpwithblockchain - Copy (2)\\frontededpwithblockchain - Copy\\contracts\\ReputationSystem.sol": {
+      "lastModificationDate": 1777967553142,
+      "contentHash": "b713753b9c0dfd8787ad2bd5e07a600a",
+      "sourceName": "contracts/ReputationSystem.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IEscrowPayment",
+        "ReputationSystem"
+      ]
+    },
+    "C:\\Users\\jatin\\OneDrive\\Desktop\\frontededpwithblockchain - Copy (2)\\frontededpwithblockchain - Copy\\contracts\\VehicleRegistry.sol": {
+      "lastModificationDate": 1777969454914,
+      "contentHash": "e8c31fa6a317e78434566795f17cd47a",
       "sourceName": "contracts/VehicleRegistry.sol",
       "solcConfig": {
         "version": "0.8.28",

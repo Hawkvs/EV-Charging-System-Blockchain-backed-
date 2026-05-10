@@ -13,9 +13,9 @@ export default function ReceiverBroadcastPage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [form, setForm] = useState({
-    energyRequired: "20",
-    pricePerUnitWei: "1000000000000000",
-    tokenRate: "1000000000000000",
+    energyRequired: "1",
+    pricePerUnitWei: "100",
+    tokenRate: "100",
     radiusKm: "3",
     location: "Auto GPS",
     batteryCapacity: "",
@@ -116,7 +116,7 @@ export default function ReceiverBroadcastPage() {
               <input value={form.batteryCapacity} onChange={onChange("batteryCapacity")} />
             </label>
             <label>
-              Energy required (kWh)
+              Energy required (Wh)
               <input type="number" min="1" value={form.energyRequired} onChange={onChange("energyRequired")} required />
             </label>
             <label>

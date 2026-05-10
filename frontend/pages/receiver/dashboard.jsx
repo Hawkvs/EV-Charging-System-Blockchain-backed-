@@ -4,11 +4,13 @@ import { useRouter } from "next/router";
 import { Shell } from "../../lib/layout";
 import { getProfile } from "../../lib/api";
 import { loadSession } from "../../lib/session";
+import { getNativeBalance } from "../../lib/web3";
 
 export default function ReceiverDashboardPage() {
   const router = useRouter();
   const [session, setSession] = useState(null);
   const [verified, setVerified] = useState(null);
+  const [balance, setBalance] = useState("-");
 
   useEffect(() => {
     const current = loadSession();
@@ -21,6 +23,10 @@ export default function ReceiverDashboardPage() {
     getProfile(current.address)
       .then((data) => setVerified(Boolean(data?.chainProfile?.verified)))
       .catch(() => setVerified(false));
+
+    getNativeBalance(current.address)
+      .then((bal) => setBalance(bal))
+      .catch(() => setBalance("-"));
   }, [router]);
 
   return (
@@ -51,8 +57,9 @@ export default function ReceiverDashboardPage() {
       <section className="card" style={{ marginTop: 14 }}>
         <h3>Account snapshot</h3>
         <div className="kv" style={{ marginTop: 8 }}>
+          <div className="item"><span>Current amount (ETH)</span><span className="mono">{balance}</span></div>
           <div className="item"><span>Name</span><span>{session?.name || "-"}</span></div>
-          <div className="item"><span>Battery capacity</span><span>{session?.batteryCapacity || "-"} kWh</span></div>
+          <div className="item"><span>Battery capacity</span><span>{session?.batteryCapacity || "-"} Wh</span></div>
           <div className="item"><span>Address</span><span className="mono">{session?.address || "-"}</span></div>
           <div className="item"><span>Verification</span><span>{verified === null ? "Checking..." : verified ? "Verified" : "Not verified"}</span></div>
         </div>

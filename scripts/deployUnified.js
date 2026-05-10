@@ -8,10 +8,10 @@ async function main() {
 
   // --- Deploy User Registry ---
   const Userregistry = await hre.ethers.getContractFactory("Userregistry");
-  const user = await Userregistry.deploy();
+  const adminAddress = process.env.ADMIN_ADDRESS || "0x490B2BD4214a215eEf0C4A92aFDeA4535FDD2775";
+  const user = await Userregistry.deploy(adminAddress);
   await user.waitForDeployment();
   const userAddr = await user.getAddress();
-  console.log("Userregistry:", userAddr);
 
   // --- Deploy unified escrow ---
   const validator = process.env.VALIDATOR_ADDRESS || deployer.address;

@@ -29,11 +29,6 @@ self.__BUILD_MANIFEST = {
       "static/chunks/main.js",
       "static/chunks/pages/dashboard.js"
     ],
-    "/history": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/history.js"
-    ],
     "/login": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -43,6 +38,11 @@ self.__BUILD_MANIFEST = {
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/profile.js"
+    ],
+    "/receiver/dashboard": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/receiver/dashboard.js"
     ]
   },
   "ampFirstPages": []

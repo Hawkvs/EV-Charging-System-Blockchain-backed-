@@ -80,7 +80,7 @@ export default function LoginPage() {
             <input value={form.evModel} onChange={onChange("evModel")} required />
           </label>
           <label>
-            Battery capacity (kWh)
+            Battery capacity (Wh)
             <input type="number" min="1" value={form.batteryCapacity} onChange={onChange("batteryCapacity")} required />
           </label>
         </div>

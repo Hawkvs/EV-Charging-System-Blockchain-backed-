@@ -118,3 +118,15 @@ export function formatEthFromWei(wei) {
     return String(wei || 0);
   }
 }
+
+export async function getNativeBalance(address) {
+  if (!window.ethereum) return "0.0";
+  try {
+    const provider = new ethers.BrowserProvider(window.ethereum);
+    const bal = await provider.getBalance(address);
+    return ethers.formatEther(bal);
+  } catch (err) {
+    console.error("Failed to get balance", err);
+    return "0.0";
+  }
+}

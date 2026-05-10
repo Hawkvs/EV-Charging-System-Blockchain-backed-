@@ -1,1 +1,9 @@
 node_modules
+.env
+frontend/.next
+artifacts/
+cache/
+__pycache__/
+backend_run.err
+backend_run.log
+telemetry-payload.json

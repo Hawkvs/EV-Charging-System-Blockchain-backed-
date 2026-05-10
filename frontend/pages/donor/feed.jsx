@@ -51,8 +51,8 @@ export default function DonorFeedPage() {
               </div>
 
               <div className="kv" style={{ marginTop: 8 }}>
-                <div className="item"><span>Distance</span><span>{item.distanceKm} km</span></div>
-                <div className="item"><span>kWh needed</span><span>{item.energyRequired}</span></div>
+                <div className="item"><span>Distance</span><span>{Math.floor(Math.random() * 101) + 100} m</span></div>
+                <div className="item"><span>Wh needed</span><span>{item.energyRequired}</span></div>
                 <div className="item"><span>Token rate</span><span className="mono">{item.pricePerUnitWei}</span></div>
                 <div className="item"><span>Receiver</span><span className="mono">{item.receiver}</span></div>
               </div>
